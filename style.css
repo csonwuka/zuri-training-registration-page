@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('bg-desktop.png');
+    height: 100vh;
+    align-items: center;
+}
+
+main {
+    width: 70%;
+    margin: 8em auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-container {
+   /* border: 1px solid black; */
+   margin: 8em 0;
+   padding: 0 3.8em;
+}
+
+.text-container h1 {
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+.text-container p {
+    font-weight: 400;
+    color: white;
+}
+
+.box-container {
+    padding: 25px 10px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.para-container {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 5px;
+    box-shadow: 0 5px hsl(240, 2%, 50%, 0.399);
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+.form-container {
+    background-color: #ffff;
+    box-shadow: 0 5px hsla(240, 2%, 50%, 0.399);
+    padding: 25px 30px;
+    border-radius: 5px;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container form input {
+    margin: 5px 0;
+    border-radius: 5px;
+    padding: 5px 15px;
+    border: 1px groove;
+    font-size: 16px;
+    font-weight: 500;
+    width: 20em;
+    height: 2em;
+}
+
+input[type=submit] {
+    width: 19.5em;
+    height: 3em;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: #ffff;
+    font-weight: 600;
+}
+
+input:required:invalid {
+    border-color: rgb(214, 53, 53);
+}
+
+input:focus:invalid {
+    background-image: url('icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+}
+
+.form-container p {
+    font-size: 9px;
+    color: rgb(204, 204, 204);
+}
+
+.form-container p b {
+    color: rgb(214, 53, 53);
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        background-image: url('bg-mobile.png');
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+        overflow:hidden;
+    }
+    
+    .text-container {
+        font-size: 10px;
+    }
+
+    .box-container form input {
+        padding: 5px 5px;
+        width:90%;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 530) {
+    .form-container form input {
+        width: 3px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .text-container {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+

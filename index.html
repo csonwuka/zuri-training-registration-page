@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+
+    <title>Registration Form</title>
+</head>
+<body>
+    <main>
+        <div class="text-container">
+            <h1>Learn to code by watching others</h1>
+            <p>
+                See how experienced developers solve problems in real-time.
+                Watching scripted tutorials is great, but understanding how developers think is invaluable.
+            </p>
+        </div>
+        <div class="box-container">
+            <div class="para-container">
+                <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
+            </div><br>
+            <div class="form-container">
+                <form action="#">
+                    <label for="fname"></label>
+                    <input name="fname" type="text" id="" placeholder="First Name" required><br>
+                    <label for="lname"></label>
+                    <input name="lname" type="text" id="" placeholder="Last Name" required><br>
+                    <label for="email"></label>
+                    <input name="email" type="email" id="" placeholder="Email Address" required><br>
+                    <label for="psw"></label>
+                    <input name="psw" type="password" id="" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+                    <a href="#">
+                        <input name="btn" type="submit" id="" value="CLAIM YOUR FREE TRIAL"><br>
+                    </a>
+                </form>
+                <p>
+                    By clicking the button, you are agreeing to our <b>Terms and Services</b> 
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
